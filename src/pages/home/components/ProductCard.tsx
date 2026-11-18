@@ -3,7 +3,7 @@ import Label from '../../../features/label/Label';
 import { LabelTypes } from '../../../features/label/types/LabelTypes';
 import SiteButton from '../../../features/buttons/SiteButton';
 import { ButtonTypes } from '../../../features/buttons/types/ButtonTypes';
-import './ui/productCard.css';
+import './ui/ProductCard.css';
 import { Link } from 'react-router-dom';
 import { AppContext } from '../../../features/app_context/AppContext';
 import { useContext } from 'react';

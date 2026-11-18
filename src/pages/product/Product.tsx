@@ -2,7 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { SectionDao } from '../../entities/section/api/SectionDao';
 import SiteButton from '../../features/buttons/SiteButton';
 import { ButtonTypes } from '../../features/buttons/types/ButtonTypes';
-import "./ui/product.css";
+import "./ui/Product.css";
 import { useContext } from 'react';
 import { AppContext } from '../../features/app_context/AppContext';
 
