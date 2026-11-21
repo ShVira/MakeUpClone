@@ -1,60 +1,62 @@
 💄 Makeup Clone Project
-Це сучасний e-commerce веб-додаток для продажу косметики та парфумерії, натхненний дизайном та функціоналом популярних б’юті-платформ. Проєкт побудований на React із використанням TypeScript для забезпечення надійності та масштабованості.
+A modern e-commerce web app for selling cosmetics and perfumes, inspired by the design and features of popular beauty platforms. The project is built with React and TypeScript to keep it reliable and scalable.
+
+Live demo: https://make-up-clone.vercel.app
 
 
-🚀 Основні можливості
-Каталог товарів: Динамічне завантаження товарів за категоріями через систему SectionDao.
+🚀 Main features
+Product catalog: products are loaded by category through SectionDao.
 
-Інтерактивний кошик: Повний цикл роботи з кошиком — додавання, видалення, зміна кількості та розрахунок вартості в реальному часі.
+Interactive cart: the full cart flow, including adding, removing, changing quantity and calculating the total in real time.
 
-Система авторизації: Реалізовано функціонал входу та реєстрації користувачів.
+Authorization: user login and sign up.
 
-Глобальні UI-компоненти:
+Global UI components:
 
-Модальна система: Єдине вікно підтвердження для критичних дій (оформлення замовлення, очищення кошика).
+Modal system: one confirmation window for important actions (placing an order, clearing the cart).
 
-Toast-повідомлення: Черга миттєвих сповіщень про події (наприклад, "Товар додано").
+Toast notifications: a queue of quick messages about events (for example, "Product added").
 
-Preloader: Фірмова анімація завантаження при старті додатка.
+Preloader: branded loading animation when the app starts.
 
-Адаптивний дизайн: Використання Bootstrap 5 у поєднанні з кастомними стилями для забезпечення ідеального вигляду на будь-яких пристроях.
+Responsive design: Bootstrap 5 together with custom styles so the site looks good on any device.
 
 
-🛠 Технологічний стек
+🛠 Tech stack
 Frontend: React (Hooks, Context API), TypeScript.
 
 Routing: React Router DOM.
 
 UI/UX: Bootstrap 5, Lucide Icons / Bootstrap Icons.
 
-Build Tool: Vite.
+Build tool: Vite.
 
 
-📂 Опис архітектури проєкту
-Проєкт реалізовано з використанням модульної архітектури (FSD-lite), що забезпечує чітке розділення відповідальності між шарами додатка:
+📂 Project architecture
+The project uses a modular architecture (FSD-lite), so each layer of the app has its own clear responsibility:
 
-Entities: Ізольовані бізнес-сутності (User, Product) з власними моделями та логікою.
+Entities: separate business entities (User, Product) with their own models and logic.
 
-Features: Функціональні блоки (Кошик, Авторизація, Модальні вікна), що реалізують конкретні сценарії користувача.
+Features: functional blocks (Cart, Authorization, Modals) that handle specific user scenarios.
 
-Pages: Композиційні компоненти для рендерингу цілісних екранів.
+Pages: components that build full screens.
 
-Для управління даними впроваджено патерн DAO (Data Access Object), який абстрагує логіку роботи з джерелами даних (localStorage/API) від компонентів інтерфейсу. Глобальний стан реалізовано через React Context API
-
-
-📸 Скріншоти
-<img width="1440" height="8<img width="1440" height="812" alt="Знімок екрана 2026-01-08 о 22 56 38" src="https://github.com/user-attachments/assets/513b1a85-61e9-48bf-8712-49ebcc6b48cf" />
-<img width="1440" height="809" alt="Знімок екрана 2026-01-08 о 22 56 18" src="https://github.com/user-attachments/assets/b8942cf2-ea0e-49ff-a587-e9ce3e6357db" />
-<img width="1440" height="812" alt="Знімок екрана 2026-01-08 о 22 56 08" src="https://github.com/user-attachments/assets/5172837b-eb81-4833-8ce7-6518948d6e68" />
-<img width="1437" height="815" alt="Знімок екрана 2026-01-08 о 22 55 57" src="https://github.com/user-attachments/assets/bfbb30a6-00c6-4809-a2b2-38d80f52dfd2" />
-<img width="1440" height="811" alt="Знімок екрана 2026-01-08 о 22 55 50" src="https://github.com/user-attachments/assets/63fc6f34-eccf-48b8-a371-904834f9e63c" />
-<img width="1440" height="812" alt="Знімок екрана 2026-01-08 о 22 55 30" src="https://github.com/user-attachments/assets/c3706a70-10eb-448c-9930-02529572d0fd" />
-<img width="1434" height="808" alt="Знімок екрана 2026-01-08 о 22 55 23" src="https://github.com/user-attachments/assets/03096015-6e0c-4a32-b13f-2bcf479b6c57" />
-<img width="1437" height="809" alt="Знімок екрана 2026-01-08 о 22 55 07" src="https://github.com/user-attachments/assets/ffd3451e-61b1-40a1-86eb-3b19257eba20" />
-<img width="1436" height="814" alt="Знімок екрана 2026-01-08 о 22 54 57" src="https://github.com/user-attachments/assets/5de19266-b380-4b88-aa36-e7bc90e3978d" />
-<img width="1434" height="800" alt="Знімок екрана 2026-01-08 о 22 53 51" src="https://github.com/user-attachments/assets/065f4648-d3c1-4fc7-acff-e192ffb27cc2" />
-<img width="1434" height="800" alt="Знімок екрана 2026-01-08 о 22 52 20" src="https://github.com/user-attachments/assets/2fa65481-eaf4-46ff-8e9e-4cbc9219b3eb" />
-<img width="1440" height="811" alt="Знімок екрана 2026-01-08 о 22 52 59" src="https://github.com/user-attachments/assets/21756a1b-9e16-4f81-b36c-01e3227b90c2" />
+Data is handled with the DAO (Data Access Object) pattern. It keeps the logic of working with data sources (localStorage/API) separate from UI components. Global state is managed with React Context API.
 
 
-Дякую, що переглянули цей проєкт! Якщо у вас є питання або пропозиції, буду рада обговорити.
+📸 Screenshots
+<img width="1440" height="812" alt="Screenshot" src="https://github.com/user-attachments/assets/513b1a85-61e9-48bf-8712-49ebcc6b48cf" />
+<img width="1440" height="809" alt="Screenshot" src="https://github.com/user-attachments/assets/b8942cf2-ea0e-49ff-a587-e9ce3e6357db" />
+<img width="1440" height="812" alt="Screenshot" src="https://github.com/user-attachments/assets/5172837b-eb81-4833-8ce7-6518948d6e68" />
+<img width="1437" height="815" alt="Screenshot" src="https://github.com/user-attachments/assets/bfbb30a6-00c6-4809-a2b2-38d80f52dfd2" />
+<img width="1440" height="811" alt="Screenshot" src="https://github.com/user-attachments/assets/63fc6f34-eccf-48b8-a371-904834f9e63c" />
+<img width="1440" height="812" alt="Screenshot" src="https://github.com/user-attachments/assets/c3706a70-10eb-448c-9930-02529572d0fd" />
+<img width="1434" height="808" alt="Screenshot" src="https://github.com/user-attachments/assets/03096015-6e0c-4a32-b13f-2bcf479b6c57" />
+<img width="1437" height="809" alt="Screenshot" src="https://github.com/user-attachments/assets/ffd3451e-61b1-40a1-86eb-3b19257eba20" />
+<img width="1436" height="814" alt="Screenshot" src="https://github.com/user-attachments/assets/5de19266-b380-4b88-aa36-e7bc90e3978d" />
+<img width="1434" height="800" alt="Screenshot" src="https://github.com/user-attachments/assets/065f4648-d3c1-4fc7-acff-e192ffb27cc2" />
+<img width="1434" height="800" alt="Screenshot" src="https://github.com/user-attachments/assets/2fa65481-eaf4-46ff-8e9e-4cbc9219b3eb" />
+<img width="1440" height="811" alt="Screenshot" src="https://github.com/user-attachments/assets/21756a1b-9e16-4f81-b36c-01e3227b90c2" />
+
+
+Thanks for checking out this project! If you have any questions or ideas, I will be happy to talk.
